@@ -310,7 +310,7 @@ a {
 }
 
 .cs-main-card {
-    width: 85%;
+    width: 100%;
     display: flex;
     border: 1px solid rgb(78, 75, 75);
     padding: 30px;
@@ -1033,6 +1033,7 @@ a {
     color: #e09e40;
 }
 
+
 @media (max-width: 1120px) {
     .ddo-card {
         height: 70vh;
@@ -1214,7 +1215,7 @@ a {
 
     }
 
-    @media (max-width: 440px) {
+    @media (max-width: 576px) {
         .wc-left button {
             width: 100%;
         }
@@ -1326,10 +1327,20 @@ a {
             margin-bottom: 20px;
         } 
 
+        .services-btn{
+            margin-bottom: 30px;
+        }
+
     }
 
     @media (max-width: 700px) {
         .webflow-btn {
+            width: 100%;
+        }
+    }
+
+    @media (ma-width: 440px) {
+          .wc-left button {
             width: 100%;
         }
     }

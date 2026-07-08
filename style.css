@@ -226,7 +226,7 @@ a {
 
 
 .ddo-section {
-    margin-top: 70px;
+    /* margin-top: 70px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -299,7 +299,7 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 100px 0px;
+    /* margin: 100px 0px; */
 }
 
 .case-study-h1 {
@@ -403,6 +403,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 100px;
 }
 
 .ps-h1 {
@@ -465,7 +466,7 @@ a {
 }
 
 .wc-section {
-    margin-top: 160px;
+    padding-top: 100px;
     display: flex;
     gap: 30px;
     /* align-items: center; */
@@ -517,7 +518,7 @@ a {
 /* testimonial section */
 
 .testimonial-section {
-    margin-top: 200px;
+    padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -601,7 +602,8 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 200px 60px !important;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .faq-section a {
@@ -1261,10 +1263,6 @@ a {
             align-items: start;
         }
 
-        .portfolio-section {
-            padding: 0;
-        }
-
         .ps-cards {
             width: 100%;
             display: flex;
@@ -1299,7 +1297,7 @@ a {
             justify-content: center;
             position: relative;
             overflow: hidden;
-            padding: 20px 24px;
+            padding-top: 100px;
             text-align: center;
             border: 1px solid rgb(48, 51, 48);
             border-radius: 15px;
@@ -1326,9 +1324,7 @@ a {
 
         .blog-header{
             margin-bottom: 20px;
-        }
-
-        
+        } 
 
     }
 

@@ -1,0 +1,213 @@
+.pricing-webflow-section {
+    padding: 100px 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #1b0c0cab 30%, #bcb3043a 100%);
+    overflow: hidden;
+}
+
+.pricing-webflow-section h1 {
+    font-weight: 600 !important;
+}
+
+
+
+
+.pricing-section {
+    max-width: 90%;
+    margin: 0 auto 150px;
+}
+
+/* Tabs Navigation Styling */
+.tabs-container {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #222;
+    margin-bottom: 50px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 15px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.badge {
+    color: #d4af37;
+    /* Golden/Yellow color */
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+.section-header h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.section-header p {
+    color: #aaa;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Pricing Grid Layout */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    align-items: start;
+}
+
+/* Individual Card Design */
+.price-card {
+    background: #111111;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 35px;
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    height: 90vh;
+}
+
+.section-02{
+    height: 120vh;
+    background-color: #0e0e0e !important;
+}
+
+.btn-contact-yellow{
+    background-color: #e4dd15 !important;
+    color: black !important;
+    width: 50% !important;
+    align-self: center !important;
+}
+
+.price-card:hover {
+    border-color: #444;
+}
+
+.price-card.recommended {
+    border: 1px solid #e4dd15;
+}
+
+.rec-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e4dd15;
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 10px;
+}
+
+.card-header h3 {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #e4dd15;
+    font-weight: normal;
+}
+
+.card-desc {
+    color: #aaa;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    min-height: 60px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #222;
+    margin: 25px 0;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 35px 0;
+}
+
+.features-list li {
+    margin-bottom: 12px;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+.features-list li i{
+    color: #e4dd15;
+    margin-right: 5px;
+}
+
+/* Buttons inside cards */
+.btn-card {
+    width: 100%;
+    padding: 14px;
+    background: transparent;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-card:hover {
+    background: #fff;
+    color: #000;
+}
+
+.btn-yellow {
+    background: #f3b334;
+    color: #000;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-yellow:hover {
+    background: #e4dd15;
+    color: #000;
+}
+
+/* .section-2{
+    width: 100% !important;
+    background-color: #141414;
+} */

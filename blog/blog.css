@@ -1,0 +1,21 @@
+.in-blog-section{
+    display: flex;
+    align-items:start !important;
+    justify-content: start !important;
+    align-self: self-start !important;
+    margin-top: 50px;
+}
+
+.blog-head{
+    font-size: 50px !important;
+    font-weight: 400;
+    text-align: start;
+    margin-top: 20px;
+}
+
+.blog-detail{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(160, 153, 153);
+    text-align: start;
+}

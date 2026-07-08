@@ -1,0 +1,97 @@
+.portfolio-main{
+    padding: 100px 60px 70px;
+    width: 60%;
+}
+
+.portfolio-h1{
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.portfolio-p{
+    font-size: 18px;
+    color: rgb(219, 209, 209);
+    margin-bottom: 20px;
+}
+
+.portfolio-main .btn-portfolio{
+    width: 33%;
+}
+
+.case-portfolio-grid {
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin: 50px auto; */
+    gap: 24px;
+    max-width: 100%; 
+    padding: 0 15px;
+}
+
+.case-portfolio-item {
+    width: 45%; 
+    border: 1px solid rgb(46, 45, 45);
+    border-radius: 12px;
+    background-color: #080808;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: background-image 0.4s ease, border-color 0.4s ease;
+    margin-bottom: 25px;
+}
+
+.case-portfolio-thumb {
+    width:  100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    overflow: hidden;
+}
+
+.case-portfolio-thumb img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateY(6%) scale(1); 
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.case-portfolio-content {
+    padding: 24px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex-grow: 1;
+    background-color: #141414;
+}
+
+.case-portfolio-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+}
+
+.case-portfolio-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f1eded; 
+    margin: 0;
+    text-align: left;
+}
+
+
+.case-portfolio-item:hover {
+    background-image: linear-gradient(to bottom, #0b0b0b 10%, #c4bb0833 100%); /* Halka yellow-gold tint bottom par */
+    border-color: rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+.case-portfolio-item:hover .case-portfolio-thumb img {
+    transform: translateY(0%) scale(1.03); /* Hover karne par bina jhatke ke upar aayegi image */
+}
+

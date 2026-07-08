@@ -62,7 +62,10 @@ a {
 }
 
 .main-section1 {
-    width: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .webflow-btn {
@@ -88,6 +91,7 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .ms-title {
@@ -410,8 +414,8 @@ a {
 
 .ps-cards {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     flex-wrap: wrap;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -420,7 +424,7 @@ a {
 
 
 .ps-card {
-    width: 45%;
+    width: 48%;
     border: 1px solid rgb(46, 45, 45);
     padding: 20px;
     border-radius: 12px;
@@ -807,7 +811,7 @@ a {
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -1212,6 +1216,126 @@ a {
         .wc-left button {
             width: 100%;
         }
+
+        .ms-title {
+            width: 100%;
+            font-size: 25px;
+        }
+
+        .ms-detail {
+            width: 85%;
+            font-size: 14px;
+        }
+
+        .ms-btns {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .ms-btn {
+            width: 80%;
+        }
+
+        .ddo-section {
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+
+        
+
+        .cs-section2 img {
+            height: auto;
+        }
+
+        .cs-section2-h1 {
+            font-size: 16px;
+        }
+
+        .mthe-btn {
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .cs-card-last-section {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .portfolio-section {
+            padding: 0;
+        }
+
+        .ps-cards {
+            width: 100%;
+            display: flex;
+        }
+
+        .ps-card {
+            width: 100%;
+            padding: 30px;
+        }
+
+        .ps-h1 {
+            font-size: 40px;
+        }
+
+        .wc-h1 {
+            font-size: 30px;
+        }
+
+        .cta-title {
+            font-size: 30px;
+        }
+
+        .cta-section {
+            background-color: #0b0c0d;
+            background: url(./media/yellow-radial-background.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: 20px 24px;
+            text-align: center;
+            border: 1px solid rgb(48, 51, 48);
+            border-radius: 15px;
+            margin-bottom: 100px;
+        }
+
+        .blog-grid{
+            display: grid;
+            grid-template-columns: repeat(1);
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .faq-section, 
+        .blog-section, 
+        .portfolio-section, 
+        .case-study-section, 
+        .ddo-section, 
+        .wc-section,
+        .testimonial-section,
+        .cta-section{
+            margin: 20px !important;
+        }
+
+        .blog-header{
+            margin-bottom: 20px;
+        }
+
+        
+
+    }
+
+    @media (max-width: 700px) {
+        .webflow-btn {
+            width: 100%;
+        }
     }
 
     @media (max-width: 392px) {
@@ -1219,3 +1343,4 @@ a {
             top: -10px;
         }
     }
+}

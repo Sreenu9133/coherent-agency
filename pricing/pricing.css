@@ -241,4 +241,12 @@ hr {
     .price-card{
         height: auto;
     }
+
+    .pricing-webflow-section{
+        padding: 50px 20px;
+    }
+
+    .pricing-section{
+        padding: 50px 20px;
+    }
 }

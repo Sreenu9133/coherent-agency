@@ -12,6 +12,11 @@ body {
     overflow-x: hidden !important;
 }
 
+p a{
+    text-decoration: underline;
+    color: #349be1;
+}
+
 
 .ddo-section,
 .case-study-section,

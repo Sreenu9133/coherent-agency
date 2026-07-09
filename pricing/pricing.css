@@ -13,28 +13,43 @@
     font-weight: 600 !important;
 }
 
-
-
-
-.pricing-section {
-    max-width: 90%;
-    margin: 0 auto 150px;
+p a{
+    text-decoration: underline;
+    color: #349be1;
 }
 
-/* Tabs Navigation Styling */
+.pricing-section {
+    width: 100%;
+    z-index: 1;
+    background-color: #141414;
+    padding: 100px 60px;
+}
+
 .tabs-container {
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid #222;
-    margin-bottom: 50px;
+    /* padding: 20px; */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 68px;
+    z-index:  1000;
+    background-color: #000000;
+    transition: top 0.3s ease-in-out;
+    width: 100%;
+}
+
+.tabs-container.move-to-top {
+    top: 0 !important;
+    z-index: 10003; /* Navbar se upar layer laane ke liye */
 }
 
 .tab-btn {
     background: none;
     border: none;
     color: #888;
-    font-size: 15px;
-    padding: 15px 20px;
+    font-size: 18px;
+    padding: 35px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
@@ -44,7 +59,7 @@
 .tab-btn:hover,
 .tab-btn.active {
     color: #fff;
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .section-header {
@@ -93,7 +108,7 @@
     padding: 35px;
     position: relative;
     transition: transform 0.3s ease, border-color 0.3s ease;
-    height: 90vh;
+    height: auto;
 }
 
 .section-02{
@@ -104,8 +119,9 @@
 .btn-contact-yellow{
     background-color: #e4dd15 !important;
     color: black !important;
-    width: 50% !important;
+    width: 30% !important;
     align-self: center !important;
+    margin-top: 50px;
 }
 
 .price-card:hover {
@@ -211,3 +227,18 @@ hr {
     width: 100% !important;
     background-color: #141414;
 } */
+
+@media (max-width: 576px) {
+    .tab-btn{
+        font-size: 12px;
+        padding: 15px 0;
+    }
+
+    .ms-title{
+        font-size: 35px;
+    }
+
+    .price-card{
+        height: auto;
+    }
+}

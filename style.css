@@ -726,7 +726,7 @@ a {
     text-align: center;
     border: 1px solid rgb(48, 51, 48);
     border-radius: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .cta-section #stars {
@@ -1329,6 +1329,14 @@ a {
 
         .services-btn{
             margin-bottom: 30px;
+        }
+
+        .tags-row{
+            flex-direction: column;
+        }
+
+        .blog-tag{
+            /* border-radius: 10px; */
         }
 
     }

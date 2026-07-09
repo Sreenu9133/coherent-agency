@@ -19,3 +19,15 @@
     color: rgb(160, 153, 153);
     text-align: start;
 }
+
+
+@media (max-width: 576px) {
+    .blog-head{
+        font-size: 40px !important;
+    }
+
+    .blog-detail{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

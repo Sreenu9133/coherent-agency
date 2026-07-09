@@ -29,13 +29,13 @@
     </div>
 
     <div class="tabs-container">
-        <button class="tab-btn active">Website</button>
-        <button class="tab-btn">SEO & AEO</button>
-        <button class="tab-btn">Support</button>
-        <button class="tab-btn">Apps</button>
+        <a href="#website-btn"><button class="tab-btn">Website</button></a>
+        <a href="#seo-btn"><button class="tab-btn">SEO & AEO</button></a>
+        <a href="#support-btn"><button class="tab-btn">Support</button></a>
+        <!-- <a href="#support-btn"><button class="tab-btn">Apps</button></a> -->
     </div>
 
-    <section class="pricing-section">
+    <section class="pricing-section" id="website-btn">
         <div class="section-header">
             <button class="webflow-btn services-btn"> FIGMA & WEBFLOW</button>
             <h2>Webflow Website Design &<br>Development Pricing</h2>
@@ -103,7 +103,7 @@
 
     </section>
 
-    <section class="pricing-section section-2">
+    <section class="pricing-section section-2" id="seo-btn">
 
         <div class="section-header">
             <button class="webflow-btn services-btn">SEO & AEO</button>
@@ -179,17 +179,20 @@
                 </ul>
                 <!-- <button class="btn-card">Get Started Now</button> -->
             </div>
-            <button class="btn-card btn-contact-yellow">Contact Us</button>
         </div>
+
+        <button class="btn-card btn-contact-yellow">Contact Us</button>
+
 
     </section>
 
 
-    <section class="pricing-section">
+    <section class="pricing-section" id="support-btn">
         <div class="section-header">
             <button class="webflow-btn services-btn">SUPPORT</button>
             <h2>Webflow Monthly Support & <br> Maintenance Plans</h2>
-            <p>Your website isn't a one-time project — it's a living asset. Every support plan <br> includes hosting, security, and access to our team.
+            <p>Your website isn't a one-time project — it's a living asset. Every support plan <br> includes hosting,
+                security, and access to our team.
             </p>
         </div>
 
@@ -201,7 +204,7 @@
                     <div class="price">$300 <span>/ month</span></div>
                 </div>
                 <p class="card-desc">Teams that need reliable hosting and occasional updates.</p>
-                
+
                 <hr>
                 <ul class="features-list">
                     <li><i class="bi bi-check2"></i> 3 hours/month support time</li>
@@ -475,6 +478,49 @@
     <div id="footer-placeholder"></div>
 
     <script src="/navbar.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const navbar = document.querySelector(".navbar");
+            const tabsContainer = document.querySelector(".tabs-container");
+            const sections = document.querySelectorAll(".pricing-section");
+            const tabButtons = document.querySelectorAll(".tab-btn");
+
+            window.addEventListener("scroll", () => {
+                const scrollY = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+
+    
+                if ((scrollY + windowHeight) >= (documentHeight - 100)) {
+                    if (navbar) navbar.classList.add("hide-navbar"); 
+                    tabsContainer.classList.add("move-to-top");      
+                } else {
+                    if (navbar) navbar.classList.remove("hide-navbar"); 
+                    tabsContainer.classList.remove("move-to-top");   
+                }
+
+                let currentSection = "";
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    if (scrollY >= sectionTop - 120) {
+                        currentSection = section.getAttribute("id");
+                    }
+                });
+
+                tabButtons.forEach((btn) => {
+                    btn.classList.remove("active");
+                    const parentAnchor = btn.parentElement;
+                    if (parentAnchor && parentAnchor.getAttribute("href") === `#${currentSection}`) {
+                        btn.classList.add("active");
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
     <script src="/footer.js"></script>
 </body>
 

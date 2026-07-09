@@ -95,3 +95,37 @@
     transform: translateY(0%) scale(1.03); /* Hover karne par bina jhatke ke upar aayegi image */
 }
 
+@media (max-width: 1067px) {
+    .portfolio-main{
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-main{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-main{
+        width: 100%;
+        /* margin: 30px; */
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+    .portfolio-h1{
+        font-size: 30px;
+    }
+
+    .portfolio-main .btn-portfolio{
+    width: 100%;
+    }
+
+    .case-portfolio-item{
+        width: 100%;
+    }
+
+
+}

@@ -1294,9 +1294,18 @@ a {
             font-size: 30px;
         }
 
+        .tm-card{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            height: 40vh;
+        }
+
         .cta-title {
             font-size: 30px;
         }
+
 
         .cta-section {
             background-color: #0b0c0d;
@@ -1347,9 +1356,7 @@ a {
             flex-direction: column;
         }
 
-        .blog-tag{
-            /* border-radius: 10px; */
-        }
+       
 
     }
 

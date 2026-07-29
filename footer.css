@@ -44,6 +44,10 @@ p{
     color: rgb(158, 151, 151);
 }
 
+.footer h1:hover, .footer p:hover{
+    color: #ffdf00;
+}
+
 .lower-footer{
     padding: 25px;
 }

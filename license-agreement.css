@@ -1,0 +1,18 @@
+.license-agreement{
+    padding: 100px 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.la-details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.la-container{
+    /* margin-top: 40px; */
+}

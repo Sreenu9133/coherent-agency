@@ -144,6 +144,55 @@ body{
   }
 }
 
+
+.stats-section {
+  background-color: #050505;
+  padding: 100px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  border: 1px solid #1a1a1a; 
+  margin-top: 30px;
+}
+
+.stat-card {
+  padding: 32px 28px;
+  border: 1px solid #1a1a1a; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.stat-title {
+  color: #eab308; 
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 12px 0;
+}
+
+.stat-subtitle {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+}
+
+.stat-description {
+  color: #888888;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+
 /* responsive design */
 
 @media (max-width: 1030px) {
@@ -188,6 +237,14 @@ body{
   .wwa-right img{
     width: 100%;
     height: 90vh;
+  }
+
+  .stats-section{
+    padding: 100px 20px;
+  }
+
+   .stats-grid {
+    grid-template-columns: 1fr; 
   }
 }
 

@@ -1313,7 +1313,7 @@ a {
         }
 
         .ms-btn {
-            width: 80%;
+            width: 100%;
         }
 
         .ddo-section {
@@ -1364,7 +1364,7 @@ a {
             flex-direction: column;
             align-items: start;
             justify-content: space-between;
-            height: 40vh;
+            height: 50vh;
         }
 
         .cta-title {

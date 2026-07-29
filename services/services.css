@@ -138,6 +138,11 @@
 }
 
 @media (max-width: 576px) {
+
+    .services-main{
+        padding: 100px 20px;
+    }
+
     .services-container{
         width: 90%;
         /* padding: 20px; */
@@ -149,7 +154,7 @@
     }
 
     .cta-button{
-        margin-left: 20px;
+        margin-left: 43px;
     }
 
     .service-left{

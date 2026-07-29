@@ -1,36 +1,51 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const faqQuestions = document.querySelectorAll(".faq-question");
+    const items = document.querySelectorAll(".faq-item");
 
-  faqQuestions.forEach((question) => {
-    question.addEventListener("click", () => {
-      const currentItem = question.parentElement;
-      const currentAnswer = currentItem.querySelector(".faq-answer");
-      const isActive = currentItem.classList.contains("active");
+    items.forEach((item) => {
+        const question = item.querySelector(".faq-question");
+        const answer = item.querySelector(".faq-answer");
 
-      if (!isActive) {
-        
-        const allItems = document.querySelectorAll(".faq-item");
-        
-        allItems.forEach((item) => {
-          item.classList.remove("active");
-          
-          const answer = item.querySelector(".faq-answer");
-          if (answer) {
-            answer.style.maxHeight = null;
-          }
+        answer.style.height = "0px";
+
+        question.addEventListener("click", () => {
+
+            const isOpen = item.classList.contains("active");
+
+            // Close all
+            items.forEach((faq) => {
+                const ans = faq.querySelector(".faq-answer");
+
+                faq.classList.remove("active");
+
+                ans.style.height = ans.scrollHeight + "px";
+
+                requestAnimationFrame(() => {
+                    ans.style.height = "0px";
+                });
+            });
+
+            // Open current
+            if (!isOpen) {
+
+                item.classList.add("active");
+
+                answer.style.height = "0px";
+
+                requestAnimationFrame(() => {
+                    answer.style.height = answer.scrollHeight + "px";
+                });
+
+                answer.addEventListener(
+                    "transitionend",
+                    function handler() {
+                        if (item.classList.contains("active")) {
+                            answer.style.height = "auto";
+                        }
+                        answer.removeEventListener("transitionend", handler);
+                    }
+                );
+            }
+
         });
-
-        currentItem.classList.add("active");
-        currentAnswer.style.maxHeight = currentAnswer.scrollHeight + "px";
-        
-      } else {
-        currentItem.classList.remove("active");
-        currentAnswer.style.maxHeight = null;
-      }
     });
-  });
 });
-
-
-
-

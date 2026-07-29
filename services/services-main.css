@@ -1,0 +1,358 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #050505;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+.timeline-section {
+  width: 100%;
+  padding: 120px 0;
+  position: relative;
+}
+
+.timeline-heading {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 100px;
+  text-align: center;
+}
+
+.timeline-heading span {
+  color: #ffd500;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.timeline-heading h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  line-height: 1.2;
+}
+
+.timeline-heading p {
+  margin-top: 20px;
+  color: #9b9b9b;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ===========================
+   TIMELINE
+=========================== */
+
+.timeline {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: #242424;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.timeline-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #ffd500;
+  border-radius: 20px;
+}
+
+/* ===========================
+   ITEM
+=========================== */
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  margin: 170px 0;
+  width: 100%;
+}
+
+.timeline-item.left {
+  justify-content: flex-start;
+}
+
+.timeline-item.right {
+  justify-content: flex-end;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.timeline-card {
+  width: 42%;
+
+  background: #111;
+
+  border: 1px solid #262626;
+
+  border-radius: 24px;
+
+  padding: 40px;
+
+  position: relative;
+
+  transition: 0.4s;
+
+  opacity: 0;
+
+  transform: translateY(80px);
+}
+
+.timeline-card.show {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.timeline-card:hover {
+  border-color: #ffd500;
+
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 40px rgba(255, 213, 0, 0.15);
+}
+
+.timeline-card h2 {
+  margin: 20px 0;
+
+  font-size: 34px;
+}
+
+.timeline-card p {
+  color: #9e9e9e;
+
+  line-height: 1.8;
+
+  font-size: 16px;
+}
+
+/* ===========================
+   NUMBER
+=========================== */
+
+.number {
+  font-size: 72px;
+
+  font-weight: 800;
+
+  color: #2b2b2b;
+
+  line-height: 1;
+
+  transition: 0.4s;
+}
+
+.timeline-card:hover .number {
+  color: #ffd500;
+}
+/* ===========================
+   TIMELINE DOT
+=========================== */
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 45px;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #3a3a3a;
+  border: 5px solid #050505;
+  z-index: 10;
+  transition: 0.35s;
+}
+
+.timeline-dot.active {
+  background: #ffd500;
+  box-shadow:
+    0 0 10px #ffd500,
+    0 0 25px #ffd500,
+    0 0 45px rgba(255, 213, 0, 0.5);
+}
+
+/* ===========================
+   CONNECTOR LINE
+=========================== */
+
+.timeline-item.left .timeline-card::after {
+  content: "";
+
+  position: absolute;
+
+  top: 48px;
+
+  right: -70px;
+
+  width: 70px;
+
+  height: 2px;
+
+  background: #3a3a3a;
+}
+
+.timeline-item.right .timeline-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 48px;
+
+  left: -70px;
+
+  width: 70px;
+
+  height: 2px;
+
+  background: #3a3a3a;
+}
+
+/* ===========================
+   HOVER
+=========================== */
+
+.timeline-card:hover h2 {
+  color: #ffd500;
+}
+
+.timeline-card:hover::before,
+.timeline-card:hover::after {
+  background: #ffd500;
+}
+
+/* ===========================
+   SCROLL ANIMATION
+=========================== */
+
+.timeline-card {
+  transition:
+    transform 0.7s ease,
+    opacity 0.7s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 900px) {
+  .timeline-heading h1 {
+    font-size: 40px;
+  }
+
+  .timeline-heading p {
+    font-size: 16px;
+  }
+
+  .timeline-line {
+    left: 30px;
+  }
+
+  .timeline-progress {
+    left: 0;
+  }
+
+  .timeline-dot {
+    left: 30px;
+  }
+
+  .timeline-item {
+    justify-content: flex-end !important;
+
+    margin: 90px 0;
+  }
+
+  .timeline-card {
+    width: calc(100% - 70px);
+  }
+
+  .timeline-item.left .timeline-card::after {
+    left: -40px;
+
+    width: 40px;
+
+    right: auto;
+  }
+
+  .timeline-item.right .timeline-card::before {
+    left: -40px;
+
+    width: 40px;
+  }
+
+  .number {
+    font-size: 54px;
+  }
+
+  .timeline-card h2 {
+    font-size: 28px;
+  }
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media (max-width: 600px) {
+  .timeline-section {
+    padding: 80px 0;
+  }
+
+  .timeline-heading {
+    margin-bottom: 60px;
+  }
+
+  .timeline-heading h1 {
+    font-size: 32px;
+  }
+
+  .timeline-card {
+    padding: 25px;
+  }
+
+  .timeline-card h2 {
+    font-size: 24px;
+  }
+
+  .timeline-card p {
+    font-size: 15px;
+  }
+
+  .number {
+    font-size: 42px;
+  }
+}

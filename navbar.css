@@ -82,6 +82,10 @@
     display: none;
 }
 
+.navbar a:hover{
+    color: #ffdf00;
+}
+
 @media (max-width: 990px) {
     .nav-part2, .nav-part3 {
         display: none;

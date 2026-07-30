@@ -1146,6 +1146,13 @@ a {
 
     .ps-card {
         width: 100%;
+        text-decoration: none;
+        color: white;
+    }
+
+   
+    .ps-card-detail h2{
+        color: white !important;
     }
 
     .blog-grid {

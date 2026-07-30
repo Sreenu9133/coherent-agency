@@ -189,6 +189,9 @@ p {
   .table-desc {
     margin-top: 25px;
   }
+  .problem-description {
+    width: 80%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -203,7 +206,6 @@ p {
 
   .table-row {
     grid-template-columns: 1fr 1fr;
-    /* Always 2 columns */
   }
 
   .cell {
@@ -223,6 +225,11 @@ p {
 
   .table-desc {
     margin-top: 15px;
+  }
+
+  .problem-description {
+    width: 100%;
+    padding: 10px 20px;
   }
 }
 
@@ -249,9 +256,10 @@ p {
                 work
 ====================================
 */
-.who-we-are-section {
-  padding: 100px 50px 0 !important;
+.odd-reverse {
+  flex-direction: row-reverse !important;
 }
+
 .services-work-card-text {
   padding-left: 30px !important;
   padding-right: 0 !important;
@@ -287,7 +295,6 @@ p {
   border: 1px solid #424141;
   border-bottom: 0px !important;
 }
-
 /* ===========================
    timeline
 =========================== */
@@ -331,7 +338,7 @@ p {
 }
 
 /* ===========================
-   ITEM
+          ITEM
 =========================== */
 
 .timeline-item {
@@ -350,7 +357,7 @@ p {
 }
 
 /* ===========================
-   CARD
+             CARD
 =========================== */
 
 .timeline-card {
@@ -388,7 +395,7 @@ p {
 }
 
 /* ===========================
-   NUMBER
+          NUMBER
 =========================== */
 
 .number {
@@ -403,7 +410,7 @@ p {
   color: #ffd500;
 }
 /* ===========================
-   TIMELINE DOT
+         TIMELINE DOT
 =========================== */
 
 .timeline-dot {
@@ -434,33 +441,21 @@ p {
 
 .timeline-item.left .timeline-card::after {
   content: "";
-
   position: absolute;
-
   top: 48px;
-
   right: -70px;
-
   width: 70px;
-
   height: 2px;
-
   background: #3a3a3a;
 }
 
 .timeline-item.right .timeline-card::before {
   content: "";
-
   position: absolute;
-
   top: 48px;
-
   left: -70px;
-
   width: 70px;
-
   height: 2px;
-
   background: #3a3a3a;
 }
 
@@ -494,8 +489,9 @@ p {
 =========================== */
 
 @media (max-width: 900px) {
-  .timeline-heading h1 {
-    font-size: 40px;
+  .timeline-heading h1,
+  .problem-heading {
+    font-size: 40px !important;
   }
 
   .timeline-heading p {
@@ -516,7 +512,6 @@ p {
 
   .timeline-item {
     justify-content: flex-end !important;
-
     margin: 90px 0;
   }
 
@@ -526,15 +521,12 @@ p {
 
   .timeline-item.left .timeline-card::after {
     left: -40px;
-
     width: 40px;
-
     right: auto;
   }
 
   .timeline-item.right .timeline-card::before {
     left: -40px;
-
     width: 40px;
   }
 
@@ -552,8 +544,19 @@ p {
 =========================== */
 
 @media (max-width: 600px) {
+  .who-we-are-section {
+    padding: 50px 20px !important;
+  }
+
+  .problem-hero-heading {
+    padding: 20px !important;
+  }
+  .timeline-heading h1,
+  .problem-heading {
+    font-size: 35px !important;
+  }
   .timeline-section {
-    padding: 80px 0;
+    padding: 20px !important;
   }
 
   .timeline-heading {
@@ -578,5 +581,41 @@ p {
 
   .number {
     font-size: 42px;
+  }
+}
+
+@media (max-width: 1018px) {
+  .odd-reverse {
+    flex-direction: column !important;
+  }
+  .services-work-image {
+    margin-top: 50px;
+    height: auto;
+  }
+}
+@media (max-width: 750px) {
+  .wwa-right img {
+    height: 70vh;
+  }
+  .services-work-card-text {
+    padding-left: 20px !important;
+    padding-right: 0 !important;
+  }
+  .services-work {
+    margin-top: 0;
+  }
+  .work-ul {
+    margin-left: 0;
+    padding-left: 20px;
+  }
+  .odd-reverse {
+    padding: 20px !important;
+  }
+  .services-work-card-text {
+    padding-left: 0 !important;
+  }
+  .wc-section {
+    margin: 0 !important;
+    padding-top: 0px !important;
   }
 }

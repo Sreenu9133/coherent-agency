@@ -87,7 +87,7 @@
 
 @media (max-width: 985px) {
   .portfolio-main-card {
-    padding: 100px 30px 30px;
+    padding: 100px 30px 80px;
     flex-direction: column;
   }
   .pmc-left,

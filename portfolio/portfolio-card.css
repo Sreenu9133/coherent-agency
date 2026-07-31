@@ -47,12 +47,15 @@
 .pmc-img {
   width: 100%;
   height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pmc-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 

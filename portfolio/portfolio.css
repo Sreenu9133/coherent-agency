@@ -1,6 +1,7 @@
 .portfolio-main{
     padding: 100px 60px 70px;
     width: 60%;
+    position: relative;
 }
 
 .portfolio-h1{

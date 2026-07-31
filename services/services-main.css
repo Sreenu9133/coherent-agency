@@ -587,9 +587,11 @@ p {
 }
 
 @media (max-width: 1018px) {
-  .odd-reverse {
-    flex-direction: column !important;
+  .odd-reverse, .even-reverse {
+    flex-direction: column-reverse !important;
   }
+
+
   .services-work-image {
     margin-top: 50px;
     height: auto;
